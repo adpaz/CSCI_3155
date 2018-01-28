@@ -180,7 +180,7 @@ object Lab1 extends jsy.util.JsyApplication with jsy.lab1.Lab1Like {
 
  // Interface to run your interpreter from a string.  This is convenient
  // for unit testing.
- def eval(s: String): Double = eval(Parser.parse(s))
+ override def eval(s: String): Double = eval(Parser.parse(s))
 
 
 
