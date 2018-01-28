@@ -8,10 +8,10 @@ object Lab1 extends jsy.util.JsyApplication with jsy.lab1.Lab1Like {
 
   /*
    * CSCI 3155: Lab 1
-   * <Your Name>
+   * Adrian Paz Barba
    *
-   * Partner: <Your Partner's Name>
-   * Collaborators: <Any Collaborators>
+   * Partner: Henok Hailemariam
+   * Collaborators:
    */
 
   /*
@@ -55,11 +55,26 @@ object Lab1 extends jsy.util.JsyApplication with jsy.lab1.Lab1Like {
 
   /* Exercises */
 
-  def abs(n: Double): Double = ???
+  def abs(n: Double): Double = {
+    if (n < 0) -n else n
+  }
 
-  def xor(a: Boolean, b: Boolean): Boolean = ???
+  def xor(a: Boolean, b: Boolean): Boolean = {
+    if (a == b)
+      false
+    else
+      true
+  }
 
-  def repeat(s: String, n: Int): String = ???
+
+  def repeat(s: String, n: Int): String = {
+    // might need to throw in an exception if n<0 with IllegalArgumentException
+    if (n == 0)
+      return '\0'
+    else
+      s + repeat(s, n - 1)
+
+  }
 
   def sqrtStep(c: Double, xn: Double): Double = ???
 
