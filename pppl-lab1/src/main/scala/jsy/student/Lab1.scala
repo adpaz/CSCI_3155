@@ -70,7 +70,7 @@ object Lab1 extends jsy.util.JsyApplication with jsy.lab1.Lab1Like {
   def repeat(s: String, n: Int): String = {
     // might need to throw in an exception if n<0 with IllegalArgumentException
     if (n == 0)
-      return '\0'
+      '\0'
     else
       s + repeat(s, n - 1)
 
